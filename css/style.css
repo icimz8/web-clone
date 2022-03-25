@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+:root{
+  --colorBg1: #fff;
+  --gray01: #eee;
+}
+body {position: relative; font-family:'Nanum Gothic','Apple SD Gothic Neo',"Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;}
+.container {width: 1296px; margin: 0 auto;}
+.sr-only {position: absolute; z-index: -1000;  width: 1px;  height: 1px;  overflow: hidden; visibility: hidden;}
+
+
+/* gnb */
+.header {display: flex; justify-content: space-between; align-items: center;}
+.header .logo a{display: block;font-family: 'Noto Sans',sans-serif; font-size: 30px; font-weight: 100;}
+.header nav ul{display: flex;}
+.header nav ul li {padding: 0 28px; line-height: 72px; font-weight: 700;}
+.header .gnb-icons {display: flex;}
+.gnb-svg { stroke: black;  stroke-width: 1.5px;  fill: none; width: 24px; height: 24px;}
+
+.header .gnb-icons li:nth-child(-n+2) button[data-util] {margin-right: 12px;}
+
+
+/* title */
+.main_content .main_tit {position: relative; padding: 96px 0; line-height: 66px;font-size: 46px; font-weight: 700;letter-spacing: -0.0625em; background: url(../asset/ico_date25.gif)no-repeat 0 94px; background-size: 72px 72px;}
+.main_content .main_tit .emp_tit {display: block; padding-left: 84px;}
+
+
+/* content home */
+.item_card.card_half .wrap_cont {height: 192px;}
+.cont_home {margin: 0 -18px;}
+.cont_home .sec_home {display: flex;flex-wrap: wrap;}
+ .sec_home .wrap_item {flex: 1;max-width: 666px; padding: 0 18px;}
+ 
+.item_card {position: relative; overflow: hidden;border-radius: 14px; background-color: var(--colorBg01); box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);}
+.item_card:hover {transform: translateY(-10px); box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.25); transition: 0.4s ease-in-out;}
+
+.cont_home .sec_home .wrap_item:first-child .inner_item {position: sticky; top: 170px;}
+.cont_home .sec_home .wrap_item:first-child .inner_item .item_card { max-height: 700px;}
+
+
+.cont_home .sec_home .wrap_item:last-child {min-width: 666px;}
+.cont_home .sec_home .wrap_item:last-child .inner_item {position: relative; height: 760px;}
+.cont_home .sec_home .wrap_item:last-child  .item_card {position:absolute;width: 297px;margin-top: 36px;} 
+.cont_home .sec_home .wrap_item:last-child  .item_card:nth-child(-n+2) {margin-top: 0;}
+
+.cont_home .sec_home .wrap_item:last-child .item_card.left-side{ left: 0;}
+.cont_home .sec_home .wrap_item:last-child .item_card.right-side{left: 50%;}
+.cont_home .sec_home .wrap_item:last-child .item_card.top-mid{ top: 410.961px;}
+.cont_home .sec_home .wrap_item:last-child .item_card.top-bot{ top: 191.992px;}
+
+.item_card .wrap_cont {display: block; padding: 25px 24px 0;}
+.item_card .wrap_cont .link_item {display: block; margin: 0 -24px;}
+.item_card .wrap_cont .info_cate {display: block; height: 36px;}
+.item_card .wrap_cont .info_cate .ico_cate {display: inline-block; margin-right: 8px; height: 100%;}
+.item_card .wrap_cont .info_cate .txt_cate {display: inline-block; position: relative; height: 34px; margin-top: 1px; padding: 0 13px; border-radius: 14px; font-size: 13px; line-height: 34px; color: #000; background-color: var(--gray01);vertical-align: top;}
+.item_card .wrap_cont .info_cate .txt_cate::before {content: ""; position: absolute; top: 0; left: -4px; width: 16px; height: 16px; background: url(../asset/bubble_tail.svg);}
+
+.wrap_item .item_card .wrap_thumb {display: block;margin-top: 14px; height: 223px;}
+.wrap_item:first-child .item_card .wrap_thumb {
+ margin-top: 20px; height: calc(100% - 140px);
+}
+.item_card .wrap_thumb img {display: block; width: 100%; min-height: 100%; }
+.cont_home .sec_home .item_card .link_item .tit_card {display: block;display: -webkit-box;  height:64px; margin-top: 13px; padding: 0 24px; font-size: 22px; line-height: 32px;font-weight: 700; letter-spacing: -0.0625em;  -webkit-box-orient: vertical;   -webkit-line-clamp: 2; overflow: hidden; }
+.cont_home .sec_home .wrap_item:first-child .item_card .link_item .tit_card{height: 92px;line-height: 46px; font-size: 32px;}
+.cont_home .sec_home .item_card.card_half .link_item .tit_card{
+  height: 56px;  font-size: 18px; line-height: 28px;
+}
+.tit_card .num_tit { display: inline-block; margin-right: 10px; vertical-align: top; font-size: 40px; font-weight: 300; line-height: 59px; letter-spacing: -0.0625em;}
+.cont_home .sec_home .link_item .mini_info {padding: 0 24px; margin-top: 18px; font-size: 13px;line-height: 19px; color: #666;}
+
+.item_card .btn_share { display: block; overflow: hidden;  position: absolute;  top: 30px;  right: 14px;  z-index: 20;  width: 24px;  height: 24px;  font-size: 0; line-height: 0;  text-indent: -9999px;}
+.item_card .btn_share .ico_share {display: block;width: 20px;  height: 20px;margin: 0 auto; fill: #999;}
+
+/* wrap_culture */
+.cont_home .wrap_culture {height: 540px; margin: 36px 18px;padding: 54px 66px 0;  border-radius: 14px; background-color: #fff;  text-align: center;  box-shadow: 2px 5px 40px 0 rgb(0 0 0 / 8%);}
+.cont_home .wrap_culture .tit_culture {display: block; font-size: 42px; font-weight: 700;letter-spacing: -0.0625em; line-height: 62px; color: #000;}
+.cont_home .wrap_culture .link_culture {display: inline-block; height: 38px; margin-top: 36px; padding: 10px 20px 0; border-radius: 42px; font-size: 14px; line-height: 20px; color: #fff; background-color: #000;} 
+.cont_home .wrap_culture .thumb_culture {display: block;margin: 50px auto 0; width: 100%; max-width: 900px; height: auto;}
+
