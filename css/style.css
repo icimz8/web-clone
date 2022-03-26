@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 :root{
   --colorBg1: #fff;
   --gray01: #eee;
@@ -20,17 +21,19 @@ body {position: relative; font-family:'Nanum Gothic','Apple SD Gothic Neo',"Noto
 
 
 /* title */
+.main_content {padding-bottom: 180px;}
 .main_content .main_tit {position: relative; padding: 96px 0; line-height: 66px;font-size: 46px; font-weight: 700;letter-spacing: -0.0625em; background: url(../asset/ico_date25.gif)no-repeat 0 94px; background-size: 72px 72px;}
 .main_content .main_tit .emp_tit {display: block; padding-left: 84px;}
 
 
 /* content home */
+#MainContent {position: relative;}
 .item_card.card_half .wrap_cont {height: 192px;}
-.cont_home {margin: 0 -18px;}
+.cont_home { margin: 0 -18px;}
 .cont_home .sec_home {display: flex;flex-wrap: wrap;}
  .sec_home .wrap_item {flex: 1;max-width: 666px; padding: 0 18px;}
  
-.item_card {position: relative; overflow: hidden;border-radius: 14px; background-color: var(--colorBg01); box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);}
+.item_card {position: relative; overflow: hidden;border-radius: 14px; background-color: var(--colorBg01); box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%); transition: 0.5s;}
 .item_card:hover {transform: translateY(-10px); box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.25); transition: 0.4s ease-in-out;}
 
 .cont_home .sec_home .wrap_item:first-child .inner_item {position: sticky; top: 170px;}
@@ -43,7 +46,7 @@ body {position: relative; font-family:'Nanum Gothic','Apple SD Gothic Neo',"Noto
 .cont_home .sec_home .wrap_item:last-child  .item_card:nth-child(-n+2) {margin-top: 0;}
 
 .cont_home .sec_home .wrap_item:last-child .item_card.left-side{ left: 0;}
-.cont_home .sec_home .wrap_item:last-child .item_card.right-side{left: 50%;}
+.cont_home .sec_home .wrap_item:last-child .item_card.right-side{left: 333px;}
 .cont_home .sec_home .wrap_item:last-child .item_card.top-mid{ top: 410.961px;}
 .cont_home .sec_home .wrap_item:last-child .item_card.top-bot{ top: 191.992px;}
 
@@ -75,4 +78,62 @@ body {position: relative; font-family:'Nanum Gothic','Apple SD Gothic Neo',"Noto
 .cont_home .wrap_culture .tit_culture {display: block; font-size: 42px; font-weight: 700;letter-spacing: -0.0625em; line-height: 62px; color: #000;}
 .cont_home .wrap_culture .link_culture {display: inline-block; height: 38px; margin-top: 36px; padding: 10px 20px 0; border-radius: 42px; font-size: 14px; line-height: 20px; color: #fff; background-color: #000;} 
 .cont_home .wrap_culture .thumb_culture {display: block;margin: 50px auto 0; width: 100%; max-width: 900px; height: auto;}
+
+/* Sec- home2 */
+.sec_home.sec_home2 {flex-direction: row-reverse;}
+
+.sec_home.sec_home2 .item_card.item_customer .tit_card {position: relative; display: inline-block; margin-top: 13px; padding: 14px 20px; border-radius: 15px; background-color: #FAE102;font-weight: 700;
+} 
+.sec_home.sec_home2 .item_card.item_customer .tit_card::before {
+  content: ''; position: absolute; top: 0; left: -5px; width: 18px; height: 18px;background: url(../asset/bubble_tail_y.svg);
+}
+
+.sec_home.sec_home2 .item_card.item_customer .link_cs{margin-top: 12px;}
+.sec_home.sec_home2 .item_card.item_customer .link_cs li {display: inline-block;}
+.sec_home.sec_home2 .item_card.item_customer .link_cs li a{display: block; padding: 0 20px; border-radius: 15px; line-height: 42px; color: #666; background-color: #eee;}
+
+/* Wrap_etc */
+.wrap_etc {display: flex; margin-top: 36px;}
+.wrap_etc .item_etc {display: inline-block; width: 50%; padding: 0 18px;}
+.wrap_etc .item_etc .link_etc {display: block; height: 360px; background: no-repeat calc(100% - 40px) calc(100% - 40px);border-radius: 12px; padding: 40px; font-weight: 600;}
+.wrap_etc .item_etc .link_etc.link_service{background-color: #FAE100; background-image: url(../asset/bg_home_service.png); background-size: 160px 160px;  }
+.wrap_etc .item_etc .link_etc.link_career{background-color: #3C64FF; background-image: url(../asset/bg_home_recruit.png); background-size: 300px 160px;}
+
+.wrap_etc .item_etc .link_etc .tit_item{display: block; max-width: 430px;font-size: 32px; line-height: 40px; }
+.wrap_etc .item_etc .link_etc .link_item {display: inline-block; height: 40px; margin-top: 24px;border-radius: 42px; padding: 9px 20px 0; line-height: 22px;font-size: 14px; background-color: #000; color: #fff;}
+
+.cont_home .link_news {display: block; text-align: center; margin: 80px auto 0;border-radius: 50px;  width: 260px;   line-height: 60px; background-color: #eee;font-size: 18px; font-weight: 500;}
+.cont_home .link_news:hover {background-color: #dfdfdf;}
+
+.cont_home .btn_top{position: absolute; bottom: 36px; right: 0; width: 50px; height: 50px; border-radius: 50%; background-color: #000;}
+.cont_home .btn_top .xi-arrow-up {display: block;line-height: 44px;text-align: center; font-size: 30px;  color: #fff;}
+
+
+
+.xi-arrow-right.diag-line {transform: rotate(-45deg);  }
+
+/* Footer */
+.doc-footer {border-top: 1px solid #ebebeb;}
+.doc-footer .inner-footer {padding: 37px 0 50px;}
+.top_footer {display: flex;  font-size: 14px;}
+.top_footer>* {flex: 1;}
+.top_footer .wrap_service .list_service {line-height: 20px; letter-spacing: -0.0125em;}
+.top_footer .wrap_service .list_service li{margin-top: 12px; color: #888;}
+.top_footer .wrap_service span[data-tit-f] { font-weight: 700;}
+.top_footer .tit_service {display: block; font-weight: 700;}
+.top_footer .tit_service { margin-top: 36px;}
+
+.bot_footer {margin-top: 120px;}
+
+.bot_footer .group_info {display: flex; align-items: center; font-size: 12px;}
+.bot_footer .group_info .wrap_info .link_info{display: block; margin-right: 24px;padding: 0;  font-size: 12px; color: #888; letter-spacing: -.2px;}
+.bot_footer .group_info .wrap_info .link_info.link_emph {font-weight: 700; color: #333;}
+.bot_footer .list_subinfo {display: none;}
+
+
+.bot_footer .wrap_relation {float: right; transform: translateY(-50%);}
+.bot_footer .wrap_relation .link_info { width: 208px; padding: 12px 20px; border-radius: 24px;text-align: left;background-color: #eee; line-height: 16px; letter-spacing:-0.0125em;} 
+.bot_footer .wrap_relation .link_info .xi-plus {float: right; width: 14px; height: 14px; line-height: 16px;}
+
+.bot_footer .txt_copyright { display: block; font-size: 12px; color: #888; clear: both;}
 
